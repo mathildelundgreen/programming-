@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>DISH</title>
+        <link rel="stylesheet" href="styleLoginPage1.css"> 
+
+        <h1>DISH</h1>
+<style>
+h1 {
+     color: pink;
+     text-align: center;
+     font-size: 300%;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="login-form">
+<div class="form">
+            <form class="register-form">
+            <input type="text" placeholder="username"/>
+            <input type="password" placeholder="password"/>    
+            <input type="email" placeholder="email id"/>
+            <input type="streetaddress" placeholder="street address"/>
+            <input type="password" placeholder="password"/>
+            <button>Create</button>
+            <p class="message">Already Registered? <a href="#">Login</a> 
+            </p>
+        </form> 
+        
+        <form class="login-form">
+        <input type="text" placeholder="user name"/>
+        <input type="password" placeholder="password"/>
+        <button>login</button>
+        <input type="button" name="loginbtn" value="login" name="login" id="login" onclick="validate()"/>   This needs to be included as it needs to validate the log in
+
+        <p class="message"> Not Registered? <a href="#"> Register</a>
+        </p>
+
+
+    </form>
+    </div>
+    </div>  
+    
+     <span id="loginResult"></span>
+
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+
+    <script>
+    $('.message a').click(function(){
+    $('form').animate({height:"toggle", opacity: "toggle"}, "slow");
+    }); 
+
+    </script>
+</body>
+</html>
